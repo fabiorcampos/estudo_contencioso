@@ -7,20 +7,32 @@ social: menu
 source_code: embed
 ---
 
+```{r, message=FALSE, warning=FALSE, include=FALSE}
+library(dplyr)
+source("./R/exploratory.R")
+```
 
-BERD
+Business Expenditure in R&D (BERD)
 =======================================================================
 
 Row
 -----------------------------------------------------------------------
 
-### Brazil 
+### Brazil Berd analysis 
 
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+bba = filter(BR_BERD, definition == 'b) ICT sector (operational definition)')
+bba = bba[1:2, ]
+plot_bba = barplot(bba$value, main="Brazil BERD Expenditure", 
+                   xlab="Years",
+                   ylab="Millions of current euros",
+                   names.arg = bba$year,
+                   col = "red",
+                   ylim = c(0, 1500)) 
 
 ```
 
-### Sector Information
+### No LI effect model (NLI)
 
 ```{r}
 
@@ -29,14 +41,84 @@ Row
 Row
 -----------------------------------------------------------------------
 
-### Variable Information
+###  International Benchmark
 
 ```{r}
 
 ```
 
-### International Comparasion
+### Forecast Model for NLI
 
 ```{r}
 
 ```
+
+
+Gross R&D Expenditure (GERD)
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+
+### Brazil GERD analysis 
+
+```{r}
+
+```
+
+### No LI effect model (NLI)
+
+```{r}
+
+```
+
+Row
+-----------------------------------------------------------------------
+
+###  International Benchmark
+
+```{r}
+
+```
+
+### Forecast Model for NLI
+
+```{r}
+
+```
+
+
+ R&D personnel (PERD)
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+
+### Brazil PERD analysis 
+
+```{r}
+
+```
+
+### No LI effect model (NLI)
+
+```{r}
+
+```
+
+Row
+-----------------------------------------------------------------------
+
+###  International Benchmark
+
+```{r}
+
+```
+
+### Forecast Model for NLI
+
+```{r}
+
+```
+
+

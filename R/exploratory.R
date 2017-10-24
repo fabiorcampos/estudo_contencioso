@@ -1,7 +1,7 @@
 library(dplyr)
 
 ### Load data
-df = read.csv("./dataset/predict_2017_full.csv", header = TRUE, sep = ",")
+df = read.csv("./dataset/predict_2017_full.csv", header = TRUE, sep = ",", dec = ".", numerals = "no.loss")
 head(df)
 str(df) ### check the variables codes
 
@@ -29,3 +29,9 @@ BR_RERD = filter(df, variablecode == 'RERD' & countrycode == 'BR', !is.na(value)
 ### Names
 BERD_n = 'Business Expenditure in R&D'
 GBARD_n = 'Government budget allocations for R&D'
+
+
+
+
+
+

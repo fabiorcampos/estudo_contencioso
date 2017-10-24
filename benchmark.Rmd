@@ -1,0 +1,42 @@
+---
+title: "Benchmark Internacional - ICT Sector"
+output: 
+      flexdashboard::flex_dashboard:
+      orientation: rows
+social: menu
+source_code: embed
+---
+
+
+BERD
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+
+### Brazil 
+
+```{r}
+
+```
+
+### Sector Information
+
+```{r}
+
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Variable Information
+
+```{r}
+
+```
+
+### International Comparasion
+
+```{r}
+
+```

@@ -72,8 +72,18 @@ We obtain BERD in euros and PPS using exchange rates and purchasing power pariti
 
 **Produtividade**
 
-#### Perguntas norteadoras
+### Perguntas norteadoras
 
 Se NÃO tivese a L.I o que aconteceria com o aumento da importação?
 
 Diminuiria ou aumentaria o emprego? 
+
+### Países escolhidos
+
+*Critério: Países que foram analisados pelo Predict2017 e que apresentam incentivos R&D Tax de acordo com o Survey da Deloitte
+Brasil
+Coreia do Sul
+Estados Unidos
+Reino Unido
+China
+

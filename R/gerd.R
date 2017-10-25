@@ -1,11 +1,19 @@
 ### Load data
-source("./R/exploratory.R")
-int_cou = c("UK", "US", "BR", "KR", "CN")
+df = read.csv("./dataset/predict_2017_full.csv", header = TRUE, sep = ",", dec = ".", numerals = "no.loss")
+int_cou = c("UK", "BR", "US", "KR", "CN")
 euro_pps = "Millions of current euros PPS"
-gerd_int = filter(df, classificationcode == "GERD" & countrycode == int_cou, !is.na(value))
+opr = "b) ICT sector (operational definition)"
+sec = "A'=B'+C"
+classfication = "261-264, 582, 61, 62, 631, 951"
+countries = c("United Kingdom", "Brazil", "United States", "South Korea", "China")
+berd_y = c(2008, 2011)
+
+int_gerd = filter(df, variablecode == "BERD", 
+                 countrycode %in% c("BR", "UK", "US", "KR", "CN"), 
+                 sectorcode == 'GERD', unit == euro_pps)
+
 
 ### International Benchmark
-br_test = filter(df, variablecode == "BERD", countrycode == "BR")
 
 
 ### No LI effect Model  

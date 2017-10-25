@@ -1,5 +1,5 @@
 ### Load data
-source("./R/exploratory.R")
+df = read.csv("./dataset/predict_2017_full.csv", header = TRUE, sep = ",", dec = ".", numerals = "no.loss")
 int_cou = c("UK", "BR", "US", "KR", "CN")
 euro_pps = "Millions of current euros PPS"
 opr = "b) ICT sector (operational definition)"
@@ -33,6 +33,3 @@ be_barplot = barplot(df_berd_m , beside=T, legend.text = T, col=c("blue" , "red"
                      main = "International BERD Expenditure Comparision")
 
 ### No LI effect Model
-
-
-### Forecast Model

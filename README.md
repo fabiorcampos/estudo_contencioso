@@ -6,9 +6,11 @@ Baseado no Guide to measuring the Information Society (Organisation for Economic
 
 Comparatibilidade utilizando NACE-Rev.2.1 (1995 - 2014)
 
-1. Business R&D Expenditure (BERD)
+1. Business R&D Expenditure (BERD): Intramural  expenditures  on  R&D  performed  within  business  enterprise  sector  during  a 
+specific period, whatever the source of funds (Frascati Manual). 
 
-2. Gross R&D Expenditure (GERD)
+2. Gross R&D Expenditure (GERD): Gross  domestic  expenditure  on  research  and  development  (GERD)  is  total  intramural 
+expenditure on research and development performed on the national territory during a given period.
 
 3. R&D personnel (PERD)
 

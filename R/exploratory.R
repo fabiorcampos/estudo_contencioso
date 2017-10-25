@@ -9,6 +9,8 @@ str(df) ### check the variables codes
 variables = table(df$variablecode)
 countries = table(df$country)
 cod_country = table(df$countrycode)
+opr = "b) ICT sector (operational definition)"
+sec = "A'=B'+C"
 
 ### Filter variables - Brazil Analysis 
 BR_BERD = filter(df, variablecode == 'BERD' & countrycode == 'BR', !is.na(value))
@@ -25,13 +27,6 @@ BR_PRICE = filter(df, variablecode == 'PRICE' & countrycode == 'BR', !is.na(valu
 BR_PRODEMP = filter(df, variablecode == 'PRODEMP' & countrycode == 'BR', !is.na(value))
 BR_PRODHEMP = filter(df, variablecode == 'PRODHEMP' & countrycode == 'BR', !is.na(value))
 BR_RERD = filter(df, variablecode == 'RERD' & countrycode == 'BR', !is.na(value))
-
-### Names
-BERD_n = 'Business Expenditure in R&D'
-GBARD_n = 'Government budget allocations for R&D'
-
-
-
 
 
 

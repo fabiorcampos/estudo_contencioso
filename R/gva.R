@@ -39,7 +39,10 @@ color = c("blue", "red", "black", "orange", "brown")
 types = c('l', "b", "l", "o", "b")
 
 plot_gvaint = plot(ts_year_gva, br_ts_gva, type = 'b', col = "red",
-                  main = "International GVA", cex.axis=0.5, ylab = euro_lab, xlab = "Years", ylim = c(20000, 700000), xlim=c(1995, 2015))
+                  main = "International GVA Benchmarrk", cex.axis=0.5, ylab = "Billions of current euros", xlab = "Years", ylim = c(20000, 700000), xlim=c(1995, 2015), axes = FALSE)
+axis(side = 1)
+axis(side = 2, at= c(0, 200000, 400000, 600000, 700000), labels = c("0", "200", "400",
+                                                                            "600", "700"), cex.axis = .8)
 lines(ts_year_gva, uk_ts_gva, type = 'l', col = "blue")
 lines(ts_year_gva, us_ts_gva, type = 'l', col = "black")
 lines(ts_year_gva, kr_ts_gva, type = 'o', col = "orange")
@@ -48,7 +51,13 @@ legend("topleft", countries, col = color, pch = c(1,1,1,1,1), cex = .8)
 
 
 ### Boxplot
-boxp_gva_int = boxplot(uk_ts_gva, br_ts_gva, us_ts_gva, kr_ts_gva, cn_ts_gva, names = countries, main = "International GVA Comparision", ylab = euro_lab)
+boxp_gva_int = boxplot(uk_ts_gva, br_ts_gva, us_ts_gva, kr_ts_gva, cn_ts_gva, names = countries, main = "International GVA Comparision", 
+                       ylab = "Billions of current euros",
+                       cex.axis = .8, axes = FALSE)
+
+axis(side = 1, at= c(1,2,3,4,5), labels = countries, cex.axis = .8)
+axis(side = 2, at= c(0, 200000, 400000, 600000, 700000), labels = c("0", "200", "400",
+                                                                            "600", "700"), cex.axis = .8)
 
 ### Pie
 slices_gva = c(85746, 71243, 682883, 111103, 639963)

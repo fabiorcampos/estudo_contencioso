@@ -6,25 +6,25 @@ Baseado no Guide to measuring the Information Society (Organisation for Economic
 
 Comparatibilidade utilizando NACE-Rev.2.1 (1995 - 2014)
 
-1. Business R&D Expenditure (BERD): Intramural  expenditures  on  R&D  performed  within  business  enterprise  sector  during  a specific period, whatever the source of funds (Frascati Manual). 
+1. **Business R&D Expenditure (BERD)**: Intramural  expenditures  on  R&D  performed  within  business  enterprise  sector  during  a specific period, whatever the source of funds (Frascati Manual). Business enterprise expenditure on R&D (BERD) -covers R&D activities carried out in the business -sector by performing firms and institutes, regardless of the origin of funding.
 
-2. Gross R&D Expenditure (GERD): Gross  domestic  expenditure  on  research  and  development  (GERD)  is  total  intramural expenditure on research and development performed on the national territory during a given period.
+2. **Gross R&D Expenditure (GERD)**: Gross  domestic  expenditure  on  research  and  development  (GERD)  is  total  intramural expenditure on research and development performed on the national territory during a given period. Gross domestic spending on R&D is defined as the total expenditure (current and capital) on R&D carried out by all resident companies, research institutes, university and government laboratories, etc., in a country. It includes R&D funded from abroad, but excludes domestic funds for R&D performed outside the domestic economy. This indicator is measured in million USD and as percentage of GDP
 
-3. R&D personnel (PERD)
+3. **R&D personnel (PERD)**:  For statistical purposes, indicators on R & D personnel are compiled as both head counts (HC) and as full-time equivalents (FTEs). Researchers are a subcategory of R & D personnel and are professionals engaged in the conception or creation of new knowledge, products, processes, methods and systems, and in the management of the projects concerned. 
 
-4. R&D researchers (RERD)
+4. **R&D researchers (RERD)**
 
-5. Gross Value Added (GVA) **Variável Macroeconômica**
+5. **Gross Value Added (GVA)**: is the measure of the value of goods and services produced in an area, industry or sector of an economy, in economics. In national accounts GVA is output minus intermediate consumption;[1] it is a balancing item of the national accounts' production account.[2]
 
-6. Gross Output (GO) **Variável Macroeconômica**
+6. **Gross Output (GO)**
 
-7. Employment (EMP)
+7. **Employment (EMP)**
 
-8. Hours worked (HEMP) **Estimativa**
+8. **Hours worked (HEMP)**
 
-9. Labour productivity per employed person (PRODEMP)
+9. **Labour productivity per employed person (PRODEMP)**
 
-10. Labour productivity per hour worked (PRODHEMP)
+10. **Labour productivity per hour worked (PRODHEMP)**
 
 11. Government budget allocations for R&D (GBARD) for the period 2006-2015.**Não disponível para o Brazil**
 

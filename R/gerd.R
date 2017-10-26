@@ -18,9 +18,15 @@ gerd_df = filter(df, variablecode == "BERD",
 br_gerd = filter(gerd_df, countrycode == "BR", !is.na(value))
 ts_gerd = br_gerd$value
 ts_year = br_gerd$year
-plot_gebr = plot(ts_year, ts_gerd, type = 'l', col = "red",
-                main = "Brazilian GERD Expenditures", ylab = euro_lab, xlab = "Years", ylim = c(10000, 30000), xlim = c(2000, 2013))
 
+plot_gebr = plot(ts_year, ts_gerd, type = 'l', col = "red",
+                main = "Brazilian GERD Expenditures", 
+                ylab = "Billions of current euros", xlab = "Years", 
+                ylim = c(10000, 30000), xlim = c(2000, 2012),
+                axes = FALSE)
+axis(side = 1)
+axis(side = 2, at= c(0, 10000, 15000, 20000, 25000, 30000), labels = c("0", "10", "15",
+                                                                            "20", "25", "30"))
 boxplot(ts_gerd)
 summary(ts_gerd)
 
@@ -46,16 +52,30 @@ color = c("blue", "red", "black", "orange", "brown")
 types = c('l', "b", "l", "o", "b")
 
 plot_geint = plot(ts_year, ts_gerd, type = 'l', col = "red",
-                  main = "International GERD Expenditures", ylab = euro_lab, xlab = "Years", ylim = c(10000, 400000), xlim = c(2000, 2013))
+                  main = "International GERD Expenditures", 
+                  ylab = "Billions of current euros", xlab = "Years", 
+                  ylim = c(0, 400000), xlim = c(2000, 2014),
+                  axes = FALSE,
+                  cex.axis = .7)
+axis(side = 1)
+axis(side = 2, at= c(0, 100000, 200000, 300000, 400000, 500000), labels = c("0", "100", "200",
+                                                                            "300", "400", "500"))
 lines(ts_year, uk_ts_gerd, type = 'b', col = "blue")
 lines(ts_year, us_ts_gerd, type = 'l', col = "black")
 lines(ts_year, kr_ts_gerd, type = 'o', col = "orange")
 lines(ts_year, cn_ts_gerd, type = 'b', col = "brown")
-legend("topleft", countries, col = color, pch = c(1,1,1,1,1))
+legend("topleft", countries, col = color, lwd = .8, cex = .8)
 
 
 ### Boxplot
-boxp_gerd_int = boxplot(uk_ts_gerd, ts_gerd, us_ts_gerd, kr_ts_gerd, cn_ts_gerd, names = countries, main = "International GERD Comparision", ylab = euro_lab)
+boxp_gerd_int = boxplot(uk_ts_gerd, 
+                        ts_gerd, 
+                        us_ts_gerd, 
+                        kr_ts_gerd, 
+                        cn_ts_gerd, 
+                        names = countries, main = "International GERD Comparision", 
+                        ylab = euro_lab,
+                        cex.axis = .8)
 
 ### Pie
 slices_gerd = c(30805, 29302, 337256, 50223, 246144)

@@ -57,3 +57,8 @@ countries_pie_gva <- paste(countries, pct_gva) # add percents to labels
 countries_pie_gva <- paste(countries_pie_gva,"%",sep="") # ad % to labels
 pie_gva = pie(slices_gva,labels = countries_pie_gva, main="International GVA - 2014") 
 
+x1995 = c(uk_ts_gva[1], br_ts_gva[1], us_ts_gva[1], kr_ts_gva[1], cn_ts_gva[1]) 
+x2014 = c(uk_ts_gva[20], br_ts_gva[20], us_ts_gva[20], kr_ts_gva[20], cn_ts_gva[20]) 
+var = (x2014 - x1995) / x1995
+
+gva_summary = data.frame(x1995, x2014, var, row.names = countries)

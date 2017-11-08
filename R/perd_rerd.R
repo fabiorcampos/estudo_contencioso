@@ -19,9 +19,13 @@ perd_y2011 = filter(perd_df, year == 2011)
 perd_df = data.frame("2008" = perd_y2008$value, "2011" = perd_y2011$value, row.names = countries_perd)
 perd_df = as.data.frame(t(perd_df))
 perd_df_m = as.matrix(perd_df)
-perd_barplot = barplot(perd_df_m , beside=T, legend.text = T, col=c("blue" , "red"), ylim=c(0,400000), xlab = "Countries", 
-                     ylab = "Full Time Equivalent",
-                     main = "R&D Personnel - International Comparasion")
+perd_barplot = barplot(perd_df_m , beside=T, col=c("blue" , "red"), ylim=c(0,400000), xlab = "Countries", 
+                     ylab = "Full Time Equivalent - Thousands",
+                     main = "R&D Personnel - International Comparasion", axes = FALSE)
+axis(side = 2, at=c(0, 100000, 200000, 300000,400000), labels = c("0", "100", "200", "300", "400"))
+legend("topleft", c("2008", "2011"), col = c("blue", "red"), pch = c(1,1,1,1,1))
+
+
 
 summary(perd_df)
 

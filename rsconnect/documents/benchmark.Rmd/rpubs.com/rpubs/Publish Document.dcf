@@ -1,10 +1,8 @@
 name: Publish Document
 title:
-username:
 account: rpubs
 server: rpubs.com
-hostUrl: rpubs.com
 appId: https://api.rpubs.com/api/v1/document/322710/521f5475567b4411ae5d7ec67eb4cf5b
 bundleId: https://api.rpubs.com/api/v1/document/322710/521f5475567b4411ae5d7ec67eb4cf5b
 url: http://rpubs.com/fabiorocha5150/322710
-when: 1508991480.34334
+when: 1509023638.04745

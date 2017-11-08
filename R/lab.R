@@ -45,7 +45,7 @@ legend("topleft", countries, col = color, pch = c(1,1,1,1,1), cex = .8)
 
 
 ### Boxplot
-boxp_lab_int = boxplot(uk_ts_lab, br_ts_lab, us_ts_lab, kr_ts_lab, cn_ts_lab, names = countries, main = "International lab Comparision", ylab = "persons", cex.axis=0.8)
+boxp_lab_int = boxplot(uk_ts_lab, br_ts_lab, us_ts_lab, kr_ts_lab, cn_ts_lab, names = countries, main = "International lab Comparision", ylab = "thousands of current euros PPS per person", cex.axis=0.8)
 
 ### Pie
 slices_lab = c(83, 56, 165, 102, 43)
